@@ -7,21 +7,26 @@
     tools:context=".FoodActivity">
 
     <ImageView
-        android:id="@+id/food_photo"
+        android:id="@+id/salad_photo"
         android:layout_width="match_parent"
         android:layout_height="190dp"
         android:scaleType="centerCrop"/>
 
     <TextView
-        android:id="@+id/food_name"
+        android:id="@+id/salad_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
 
     <TextView
-        android:id="@+id/food_description"
+        android:id="@+id/salad_description"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="vertical"/>
 
 </LinearLayout>

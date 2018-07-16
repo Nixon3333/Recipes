@@ -2,6 +2,7 @@ package com.example.nixon.recipes;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,13 +17,14 @@ public class DrinkActivity extends Activity {
         int id = (int) getIntent().getExtras().get(EXTRA_DRINKID);
         Drink drink = Drink.drinks[id];
 
-        TextView name = findViewById(R.id.name);
+        TextView name = findViewById(R.id.drink_name);
         name.setText(drink.getName());
 
-        TextView description = findViewById(R.id.description);
+        TextView description = findViewById(R.id.drink_description);
         description.setText(drink.getDescription());
+        description.setMovementMethod(new ScrollingMovementMethod());
 
-        ImageView photo = findViewById(R.id.photo);
+        ImageView photo = findViewById(R.id.drink_photo);
         photo.setImageResource(drink.getImageResourseId());
         photo.setContentDescription(drink.getName());
     }

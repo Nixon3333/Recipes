@@ -2,6 +2,7 @@ package com.example.nixon.recipes;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,6 +22,7 @@ public class FoodActivity extends Activity {
 
         TextView foodDescription = findViewById(R.id.food_description);
         foodDescription.setText(food.getDescription());
+        foodDescription.setMovementMethod(new ScrollingMovementMethod());
 
         ImageView foodPhoto = findViewById(R.id.food_photo);
         foodPhoto.setImageResource(food.getImageResourseId());
