@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nixon.recipes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.nixon.recipes.TopLevelActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.nixon.recipes.DrinkCategoryActivity" />
+        <activity android:name="com.example.nixon.recipes.DrinkActivity" />
+        <activity android:name="com.example.nixon.recipes.FoodActivity" />
+        <activity android:name="com.example.nixon.recipes.FoodCategoryActivity" />
+        <activity android:name="com.example.nixon.recipes.SaladActivity" />
+        <activity android:name="com.example.nixon.recipes.SaladCategoryActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Recipes</string>
+    <string name="recipes_logo">Recipes logo</string>
+
+    <string name="share">Share</string>
+    <string name="about">About</string>
+    <string name="share_text">Hi! I found a great app with recipes! "The best recipes!" Look for it on Google Play!</string>
+    <string name="about_title">About this app</string>
+    <string name="about_text">This is an incredibly cool application with a huge number of recipes! It is constantly updated and replenished with new dishes and drinks!</string>
+    <string name="about_negative_button">Ok</string>
+    <string name="choose">Выберите, что Вас интересует:</string>
+
+
+    <string-array name="list_options">
+        <item>Drinks</item>
+        <item>Foods</item>
+        <item>Side dish</item>
+    </string-array>
+
+</resources>
